@@ -3,7 +3,7 @@
  */
 
 
-export class ComponentRecyclePool<T extends cc.Component>{
+export class ComponentRecyclePool <T extends cc.Component>{
 
     prefab: cc.Prefab;
 
