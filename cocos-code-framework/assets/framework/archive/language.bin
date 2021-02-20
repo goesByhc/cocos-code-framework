@@ -1,0 +1,516 @@
+
+Y
+
+GAME_STARTK<outline color=white width=2>注意！星球大战一触即发！</outline>
+b
+ROUND_FIRST_CAMPN<outline color=white width=2><color=[campColor]>[camp]</color>先行</outline>
+Q
+
+ROUND_CAMPC<outline color=white width=2><color=[0]>[1]</color>回合</outline>
+F
+ROUND_MINE_CAMP3<outline color=white width=2>我的回合</outline>
+P
+ROUND_SIX_AGAIN=<outline color=white width=2>6点！再来一次！</outline>
+F
+ROUND_MOVE_BACK3<outline color=white width=2>后退[0]点</outline>
+b
+ROUND_END_CAMPP<outline color=white width=2><color=[campColor]>[camp]</color>：[2]/4</outline>
+c
+ROUND_WIN_CAMPQ<outline color=white width=2><color=[campColor]>[camp]</color>获胜！</outline>
+Z
+SCENES_ALL_MOVEG<outline color=white width=2>所有棋子航行点数+[point]</outline>
+|
+SCENES_LIVINGCHESS_MOVEa<outline color=white width=2>开始时，所有航道中的棋子向前航行[point]点</outline>
+J
+SCENES_MOVE;<outline color=white width=2>航行点数+[point]</outline>
+[
+SCENES_ROLL_AGAINF<outline color=white width=2>投到[point]可以再投一次</outline>
+[
+SCENES_READYK<outline color=white width=2>所有基地的棋子进入起航点</outline>
+a
+SCENES_FULL_ENERGYK<outline color=white width=2>立即填满所有玩家的能量槽</outline>
+O
+SCENES_DOUBLE_MOVE9<outline color=white width=2>航行点数翻倍</outline>
+f
+SCENES_CHESS_LINEQ<outline color=white width=2>所有棋子链接在一起，一同进退</outline>
+h
+SCENES_FINAL_WINT<outline color=white width=2>到达冲刺轨道的棋子直接进入终点</outline>
+V
+TRIGGER_LOUYOU_TITLE><outline color=white width=2>漏油：航行点数-6</outline>
+Y
+TRIGGER_FANXIANG_TITLE?<outline color=white width=2>反向：反方向航行</outline>
+e
+TRIGGER_MISHI_TITLEN<outline color=white width=2>迷失：下一次的跳跃将会失效</outline>
+V
+TRIGGER_HUISU_TITLE?<outline color=white width=2>回溯：反方向跳跃</outline>
+[
+TRIGGER_KONGZHI_TITLEB<outline color=white width=2>空置：跳过下个回合</outline>
+b
+TRIGGER_FENNU_TITLEK<outline color=white width=2>愤怒：下一次叠机视为撞击</outline>
+b
+TRIGGER_YIHAN_TITLEK<outline color=white width=2>遗憾：回到冲刺航道的起点</outline>
+b
+TRIGGER_GONGSONG_TITLEH<outline color=white width=2>恭送：身上的神将被击落</outline>
+}
+TRIGGER_LOUYOU_DESCf<outline color=white width=2>目标下一回合的航行点数-6，航行点数最少为0点</outline>
+�
+TRIGGER_FANXIANG_DESCo<outline color=white width=2>目标下一回合航行时，将反向航行，最多航行至起航点</outline>
+
+TRIGGER_MISHI_DESCi<outline color=white width=2>当目标下一次航行，并且可跳跃时，此次跳跃失败</outline>
+�
+TRIGGER_HUISU_DESCr<outline color=white width=2>当目标下一次航行，并且可跳跃时，此次跳跃为反向跳跃</outline>
+Z
+TRIGGER_KONGZHI_DESCB<outline color=white width=2>使目标跳过下一回合</outline>
+�
+TRIGGER_FENNU_DESC{<outline color=white width=2>当目标下一次航行，并与自己的棋子同行时，此次同行视为撞击</outline>
+�
+TRIGGER_YIHAN_DESC{<outline color=white width=2>使目标的任一棋子在进入冲刺轨道时，重新回到冲刺轨道的入口</outline>
+
+TRIGGER_GONGSONG_DESCf<outline color=white width=2>与目标同行的神，将会在目标的回合开始时离去</outline>
+�
+TRIGGER_LOUYOU_USE�<outline color=white width=2>毫不留情的对<color=[beUseCampColor]>[beUseCamp]</color>使出【漏油】！
+目标下一回合的航行点数-6</outline>
+�
+TRIGGER_FANXIANG_USE�<outline color=white width=2>毫不留情的对<color=[beUseCampColor]>[beUseCamp]</color>使出【反向】！
+目标下一回合航行时，将反向航行</outline>
+�
+TRIGGER_MISHI_USE�<outline color=white width=2>毫不留情的对<color=[beUseCampColor]>[beUseCamp]</color>使出【迷失】！
+目标下一次的跳跃将会失败</outline>
+�
+TRIGGER_HUISU_USE�<outline color=white
+  width=2>毫不留情的对<color=[beUseCampColor]>[beUseCamp]</color>使出【回溯】！
+目标下一次的跳跃将为反向跳跃</outline>
+�
+TRIGGER_KONGZHI_USE�<outline color=white
+  width=2>毫不留情的对<color=[beUseCampColor]>[beUseCamp]</color>使出【空置】！
+使目标跳过下一回合</outline>
+�
+TRIGGER_FENNU_USE�<outline color=white
+  width=2>毫不留情的对<color=[beUseCampColor]>[beUseCamp]</color>使出【愤怒】！
+目标下一次同行时，此次同行视为撞击</outline>
+�
+TRIGGER_YIHAN_USE�<outline color=white
+  width=2>毫不留情的对<color=[beUseCampColor]>[beUseCamp]</color>使出【遗憾】！
+目标下一次进入冲刺轨道时，将重回冲刺轨道的入口</outline>
+�
+TRIGGER_GONGSONG_USE�<outline color=white
+  width=2>毫不留情的对<color=[beUseCampColor]>[beUseCamp]</color>使出【恭送】！
+与目标同行的神，将会在其回合开始时离去</outline>
+�
+TRIGGER_GETu<outline color=white
+  width=2><color=[campColor]>[userCamp]</color>偷偷的对你使出了某种诡计！</outline>
+�
+TRIGGER_LOUYOU_GET�<outline color=white
+  width=2><color=[beUseCampColor]>[beUseCamp]</color>惨糟<color=[useCampColor]>[useCamp]</color>的【漏油】暗算！
+本回合航行点数-6</outline>
+�
+TRIGGER_FANXIANG_GET�<outline color=white
+  width=2><color=[beUseCampColor]>[beUseCamp]</color>惨糟<color=[useCampColor]>[useCamp]</color>的【反向】暗算！
+本回合将反向航行</outline>
+�
+TRIGGER_MISHI_GET�<outline color=white width=2><color=[beUseCampColor]>[beUseCamp]</color>惨糟<color=[useCampColor]>[useCamp]</color>的【迷失】暗算！
+本次跳跃失效</outline>
+�
+TRIGGER_HUISU_GET�<outline color=white
+  width=2><color=[beUseCampColor]>[beUseCamp]</color>惨糟<color=[useCampColor]>[useCamp]</color>的【回溯】暗算！
+本次将反向跳跃</outline>
+�
+TRIGGER_KONGZHI_GET�<outline color=white
+  width=2><color=[beUseCampColor]>[beUseCamp]</color>惨糟<color=[useCampColor]>[useCamp]</color>的【空置】暗算！
+跳过本回合</outline>
+�
+TRIGGER_FENNU_GET�<outline color=white
+  width=2><color=[beUseCampColor]>[beUseCamp]</color>惨糟<color=[useCampColor]>[useCamp]</color>的【愤怒】暗算！
+此次同行视为撞击</outline>
+�
+TRIGGER_YIHAN_GET�<outline color=white
+  width=2><color=[beUseCampColor]>[beUseCamp]</color>惨糟<color=[useCampColor]>[useCamp]</color>的【遗憾】暗算！
+退回至冲刺轨道的入口</outline>
+�
+TRIGGER_GONGSONG_GET�<outline color=white
+  width=2><color=[beUseCampColor]>[beUseCamp]</color>惨糟<color=[useCampColor]>[useCamp]</color>的【恭送】暗算！
+同行之神已离去</outline>
+W
+TRIGGER_GODGONED<outline color=white width=2>时机已至，[god]离开了</outline>
+�
+TRIGGER_CUPID_GET�<outline color=white width=2>piu~丘比特降临啦！
+<color=[useCampColor]>[useCamp]</color>的2个棋子绑定为cp，将一同进退</outline>
+~
+TRIGGER_CUPID_EFFECTf<outline color=white width=2>受丘比特影响，绑定为cp的2个棋子可以一同进退</outline>
+�
+TRIGGER_FU_GET�<outline color=white width=2>piu~福神降临啦！
+大手一挥，<color=[useCampColor]>[useCamp]</color>能量槽被填满啦</outline>
+�
+TRIGGER_SHUAI_GET�<outline color=white width=2>piu~衰神降临啦！
+大手一挥，<color=[useCampColor]>[useCamp]</color>能量槽被清空啦</outline>
+y
+TRIGGER_GE_GETg<outline color=white width=2>piu~格神降临啦！
+遇到[colorName]星体也可以跳跃啦</outline>
+w
+TRIGGER_GE_EFFECTb<outline color=white width=2>受格神影响，遇到[colorName]星体也可以跳跃哦</outline>
+
+TRIGGER_JINGJI_GETi<outline color=white width=2>piu~荆棘降临啦！
+宇宙沙盘中竟然出现了4个荆棘丛</outline>
+m
+TRIGGER_JINGJI_EFFECTT<outline color=white width=2>受荆棘神庇护，不会被荆棘阻拦哦</outline>
+f
+TRIGGER_JINGJI_OTHERN<outline color=white width=2>遇到荆棘丛，不能继续航行啦</outline>
+z
+TRIGGER_FENG_GETf<outline color=white width=2>piu~风神降临啦！
+宇宙沙盘中竟然出现了4个飓风</outline>
+n
+TRIGGER_FENG_EFFECTW<outline color=white width=2>受风神庇护，不会被飓风阻挡跳跃哦</outline>
+d
+TRIGGER_FENG_OTHERN<outline color=white width=2>遇到飓风，无法从这里跳跃啦</outline>
+
+INTRO_TITLE_UMA	大熊座
+
+INTRO_TITLE_UMI	小熊座
+
+INTRO_TITLE_DRA	天龙座
+
+INTRO_TITLE_CAS	仙后座
+
+INTRO_TITLE_CEP	仙王座
+
+INTRO_TITLE_AND	仙女座
+
+INTRO_TITLE_LAC	蝎虎座
+
+INTRO_TITLE_CAM	鹿豹座
+
+INTRO_TITLE_AUR	御夫座
+
+INTRO_TITLE_CVN	猎犬座
+
+INTRO_TITLE_VUL	狐狸座
+
+INTRO_TITLE_CYG	天鹅座
+
+INTRO_TITLE_TRI	三角座
+
+INTRO_TITLE_LMI	小狮座
+
+INTRO_TITLE_PER	英仙座
+
+INTRO_TITLE_BOO	牧夫座
+
+INTRO_TITLE_HER	武仙座
+
+INTRO_TITLE_COM	后发座
+
+INTRO_TITLE_CRB	北冕座
+
+INTRO_TITLE_LYN	天猫座
+
+INTRO_TITLE_SGE	天箭座
+
+INTRO_TITLE_LYR	天琴座
+
+INTRO_TITLE_DEL	海豚座
+
+INTRO_TITLE_PEG	飞马座
+
+INTRO_TITLE_CNC	巨蟹座
+
+INTRO_TITLE_ARI	白羊座
+
+INTRO_TITLE_GEM	双子座
+
+INTRO_TITLE_AQU	水瓶座
+
+INTRO_TITLE_VIR	处女座
+
+INTRO_TITLE_LEO	狮子座
+
+INTRO_TITLE_TAU	金牛座
+
+INTRO_TITLE_PSC	双鱼座
+
+INTRO_TITLE_CAP	摩羯座
+
+INTRO_TITLE_SAG	射手座
+
+INTRO_TITLE_SCO	天蝎座
+
+INTRO_TITLE_LIB	天秤座
+
+INTRO_TITLE_EQU	小马座
+
+INTRO_TITLE_CMI	小犬座
+
+INTRO_TITLE_AQL	天鹰座
+
+INTRO_TITLE_OPH	蛇夫座
+
+INTRO_TITLE_SER	巨蛇座
+
+INTRO_TITLE_HYA	长蛇座
+
+INTRO_TITLE_MON	麒麟座
+
+INTRO_TITLE_ORI	猎户座
+
+INTRO_TITLE_CET	鲸鱼座
+
+INTRO_TITLE_ARA	天坛座
+
+INTRO_TITLE_PIC	绘架座
+
+INTRO_TITLE_MUS	苍蝇座
+
+INTRO_TITLE_MEN	山案座
+
+INTRO_TITLE_HOR	时钟座
+
+INTRO_TITLE_TUC	杜鹃座
+
+INTRO_TITLE_CIR	圆规座
+
+INTRO_TITLE_APS	天燕座
+
+INTRO_TITLE_VOL	飞鱼座
+
+INTRO_TITLE_NOR	矩尺座
+
+INTRO_TITLE_DOR	剑鱼座
+
+INTRO_TITLE_CHA	堰蜓座
+
+INTRO_TITLE_HYI	水蛇座
+
+INTRO_TITLE_PHE	凤凰座
+
+INTRO_TITLE_PAV	孔雀座
+
+INTRO_TITLE_OCT	南极座
+
+INTRO_TITLE_RET	网罟座
+
+INTRO_TITLE_GRU	天鹤座
+
+INTRO_TITLE_CRA	南冕座
+
+INTRO_TITLE_CAR	船底座
+
+INTRO_TITLE_PUP	船尾座
+
+INTRO_TITLE_PYX	罗盘座
+
+INTRO_TITLE_VEL	船帆座
+
+INTRO_TITLE_SCL	玉夫座
+
+INTRO_TITLE_ERI	波江座
+
+INTRO_TITLE_SCT	盾牌座
+
+INTRO_TITLE_FOR	天炉座
+
+INTRO_TITLE_ANT	唧筒座
+
+INTRO_TITLE_CAE	雕具座
+
+INTRO_TITLE_CRT	巨爵座
+
+INTRO_TITLE_LUP	豺狼座
+
+INTRO_TITLE_CMA	大犬座
+
+INTRO_TITLE_COL	天鸽座
+
+INTRO_TITLE_CRV	乌鸦座
+
+INTRO_TITLE_PSA	南鱼座
+
+INTRO_TITLE_LEP	天兔座
+
+INTRO_TITLE_SEX六分仪座
+
+INTRO_TITLE_IND印第安座
+
+INTRO_TITLE_TRA南三角座
+
+INTRO_TITLE_TEL望远镜座
+
+INTRO_TITLE_CRU南十字座
+
+INTRO_TITLE_CEN半人马座
+
+INTRO_TITLE_MIC显微镜座
+`
+INTRO_TEXT_UMAN大熊座是北天星座之一，是著名的北斗七星所在的星座喔。
+�
+INTRO_TEXT_UMIo小熊座标示着北天极的所在，就连北极星也是小熊座的一部分喔，星空中最亮的崽！
+�
+INTRO_TEXT_DRAr天龙座是北天夜空中一年四季都可以看到的星座，看上去就像一条弯曲盘旋着的蛟龙！
+y
+INTRO_TEXT_CASg仙后座呈M形，极易分辨，全年都可观测，尤其是秋季的夜晚中更是闪闪发光！
+�
+INTRO_TEXT_CEPo仙王座呈五边形，紧挨北极星，全年都可观测，尤其是秋季的夜晚中更是引人注目！
+a
+INTRO_TEXT_ANDO仙女座是星空中最大的星座之一，足足有满月大小的1400倍！
+o
+INTRO_TEXT_LAC]蝎虎座形状富有特点，看上去仿若一只全力伸展四肢迅速爬行的壁虎。
+�
+INTRO_TEXT_CAM~鹿豹座是一个“纤细高挑”的星座，如长颈鹿一般，全年都可观测，秋季夜晚是最佳观测季喔！
+�
+INTRO_TEXT_AUR{御夫座是北天星座之一，由一个特别醒目的五边形组成，并且有一半沉浸在美丽的银河之中。
+~
+INTRO_TEXT_CVNl猎犬座的构成中大部分都是暗星，因此时常难以观测，完全看不出猎犬的样子呢。
+r
+INTRO_TEXT_VUL`狐狸座是一个难以观测的微弱星座，却位于银河中一个非常明亮的区域。
+�
+INTRO_TEXT_CYGr天鹅座看上去像一个大十字架，在夏秋季节中甚至可以看到它由升到落如天鹅般翱翔。
+�
+INTRO_TEXT_TRI�三角座是个不太明亮的小星座，在几千年前就引起了人们的注意，曾被称为“天上的西西里岛”。
+h
+INTRO_TEXT_LMIV小狮座星光黯淡、轮廓模糊，直到17世纪才被天文学家注意到喔。
+u
+INTRO_TEXT_PERc英仙座中有很多耀眼的亮星，即使是在市郊也能清楚看到这个星座的轮廓。
+�
+INTRO_TEXT_BOO�牧夫座由几颗星构成一个如风筝般的五边形，其中最亮的大角星，被誉为“众星之中最美丽的星”！
+{
+INTRO_TEXT_HERi武仙座是星空中最大的星座之一，尤其是在夏季的夜晚，它是当之无愧的主角！
+�
+INTRO_TEXT_COM~后发座星光黯淡，难以吸引人的目光，但是在漆黑的夜晚留心观测，你会发现它美的出人意料！
+�
+INTRO_TEXT_CRBu北冕座内的七颗小星构成了一个美丽的华冠，传说这是酒神送给心爱的妻子的新婚礼物！
+�
+INTRO_TEXT_LYNx天猫座中都是暗星，难以观测，因此传说只有目力锋锐如猫的人才能看到这个暗淡的星座。
+�
+INTRO_TEXT_SGEo天箭座看上去像一支飞行中的箭，并且在“谁更小”的比赛中喜获第三名的好成绩！
+u
+INTRO_TEXT_LYRc天琴座是北天银河中最灿烂的星座之一，因形状犹如古希腊的竖琴而命名。
+~
+INTRO_TEXT_DELl海豚座面积小、图形简单，但是其中几颗星星组合起来却如一只跃出水面的海豚。
+�
+INTRO_TEXT_PEGx飞马座的星图，最显著的特点是由四颗星构成了一个近正方形，在秋季的天空中格外醒目。
+�
+INTRO_TEXT_CNC�巨蟹座是黄道十二宫星座之一，也是其中最黯淡的星座之一，在城市中几乎无法通过肉眼观测到喔。
+�
+INTRO_TEXT_ARIx白羊座是黄道十二宫星座之一，也是黄道第一星座！而且它可是古代的春分点所在位置喔。
+�
+INTRO_TEXT_GEM{双子座是黄道十二宫星座之一，并且美丽壮观的双子座流星雨也是北半球三大流星雨之一喔。
+�
+INTRO_TEXT_AQUx水瓶座是黄道十二宫星座之一，若观测它的星图便会看到仿佛是从酒瓶中流出的玉液琼浆。
+�
+INTRO_TEXT_VIR~处女座是黄道十二宫星座之一，也是最大的黄道带星座，在春夏两季的夜空中一直闪耀着光芒。
+�
+INTRO_TEXT_LEO�狮子座是黄道十二宫星座之一，也是春季夜空中一个壮丽的大星座，它的设立已有数千年的历史。
+�
+INTRO_TEXT_TAU~金牛座是黄道十二宫星座之一，也是星空中最有特色的星座之一，象征了一头飞奔而去的公牛。
+�
+INTRO_TEXT_PSC{双鱼座是黄道十二宫星座之一，它有两条星链，各代表一条鱼，常被描绘成尾部相连的样子。
+�
+INTRO_TEXT_CAPx摩羯座是黄道十二宫星座之一，它又被称为山羊座，是个中等大小，比较暗弱的夏季星座。
+�
+INTRO_TEXT_SAG�射手座是黄道十二宫星座之一，它身处银河系中星光最密集的区域，被想象为一位骑在马背上的射手。
+�
+INTRO_TEXT_SCO~天蝎座是黄道十二宫星座之一，并且是其中最为显著的星座，也是一个接近银河中心的大星座。
+{
+INTRO_TEXT_LIBi天秤座是黄道十二宫星座之一，通常被世人认为是正义女神手中拿着的那杆秤。
+�
+INTRO_TEXT_EQU~小马座无论从哪个角度看都不像一匹马，经常被视为一匹马的头部。这个说法究竟从何而来呢？
+r
+INTRO_TEXT_CMI`小犬座在冬季的夜晚十分醒目，听说它的出现是为了来陪伴大犬座的喔。
+�
+INTRO_TEXT_AQL~天鹰座的星图如一只展翅翱翔的雄鹰，这只鹰的心脏处，可是与织女星隔银河相望的牛郎星哦。
+�
+INTRO_TEXT_OPHr蛇夫座在天文学上被认定为是黄道上的星座之一，难道黄道十二宫星座要被改写了嘛？
+~
+INTRO_TEXT_SERl巨蛇座是唯一被分成两个部分的星座，真糟糕，这条巨蛇的蛇头与蛇尾被分家啦！
+�
+INTRO_TEXT_HYAr长蛇座是长度最长、面积最大的星座，然而座内没有耀眼的亮星，因此不太引人注目。
+�
+INTRO_TEXT_MON~麒麟座位于银河之中，其中的亮星却很少，在中国，麒麟座也是一个被人们称为吉祥的星座哦。
+�
+INTRO_TEXT_ORI�猎户座在每年一月底二月初晚上八点多时，座内的三个星会正挂南天，这便是“三星正南，就要过年”！
+�
+INTRO_TEXT_CET�鲸鱼座是一个横跨赤道南北的大星座，并且在每年的3月27、28日，太阳都会有一小部分位于鲸鱼座哦。
+�
+INTRO_TEXT_ARA~天坛座面积虽小，却处在银河之中，在古希腊的传说故事里，天坛座可是一座燃着圣火的祭坛。
+�
+INTRO_TEXT_PIC�绘架座中的恒星在地球上看十分黯淡，难以观测，因此引人遐想：也许在太空中是不一样的景象呢？
+�
+INTRO_TEXT_MUS�苍蝇座原名是“蜜蜂座”，星内最亮的一双星像蜜蜂的一对明亮小眼睛，靠在一起闪闪发光十分可爱。
+�
+INTRO_TEXT_MEN�山案座是天文学家拉卡伊为纪念一座常上去观测星空的平顶山而设立的，座内星光黯淡，被星云所覆盖。
+�
+INTRO_TEXT_HOR�时钟座绝大部分的星都十分黯淡，因此要把它想象成一只时钟是很困难的，这个名字缘何而来呢？
+�
+INTRO_TEXT_TUC�杜鹃座的“杜鹃”，实际上是指南美洲一种嘴巴巨大、羽毛艳丽的鸟，你可知这名字竟是因翻译错误而来？
+�
+INTRO_TEXT_CIRs圆规座原名是“指南针座”，后因为像圆规故改名，这个星座距离地球只有1500光年喔！
+�
+INTRO_TEXT_APSo天燕座是为纪念新几内亚的极乐鸟而得名，在中国只有南沙群岛地区才能观测到喔。
+�
+INTRO_TEXT_VOL�飞鱼座是由荷兰航海家们发现的，它没有相应的神话故事，只因为......古希腊人无法观测到它......
+�
+INTRO_TEXT_NOR�矩尺座的曾用名有“木工矩尺和水尺”，和”勘测员的水平仪“，大概叫起来实在太长，便简化为”矩尺座“。
+�
+INTRO_TEXT_DORr剑鱼座内的星十分黯淡，难以观测，却因为著名的大麦哲伦星云在其界内而受人瞩目。
+�
+INTRO_TEXT_CHA�蝘蜓座是南天极附近一个黯淡的小型星座，代表一只变色龙，因十分擅于伪装，肉眼难以观测到。
+�
+INTRO_TEXT_HYI~水蛇座是一个远离黄道的星座，其中三颗最亮的星组成一个三角，几乎正指南天极的相反方向。
+�
+INTRO_TEXT_PHEo凤凰座中的星虽然不太亮，却依然可以看做是一只从火焰中展翅起飞的新生的凤凰。
+�
+INTRO_TEXT_PAVr孔雀座是南天星座之一，传说中在这个骄傲的昂首开屏的孔雀羽尾上有着一百只眼睛。
+�
+INTRO_TEXT_OCTr南极座最引人注目的地方是这个天区中包含了南天极，南半球的一年四季皆可观测到。
+�
+INTRO_TEXT_RETo网罟座是一个很小的星座，座内有一对十分对称的双星，勾勒出了一个细长的菱形。
+p
+INTRO_TEXT_GRU^天鹤座是南天星座之一，在1604年被业余天文学家巴耶划为独立的星座。
+�
+INTRO_TEXT_CRA�南冕座在遥远的南天，与北冕座遥隔天河相望，它由八颗恒星排列成一个弧形大半圆，十分显眼。
+�
+INTRO_TEXT_CAR�船底座中有许多璀璨的亮星，其中最明亮的当属“老人星”，老人星在东方可有“南极仙翁”之称喔。
+�
+INTRO_TEXT_PUPu船尾座中虽然没有明亮、引人注目的恒星，却有一个名字甚为有趣的星云：臭鸡蛋星团。
+�
+INTRO_TEXT_PYX�罗盘座的象征物是一个罗盘，座内有一群相当暗的星，实在是个什么形象也观察不出来的暗星座。
+�
+INTRO_TEXT_VEL�船帆座是古南船座的一部分，天文学家拉卡伊将古南船座分为3个部分，即船帆座、船尾座、船底座。
+�
+INTRO_TEXT_SCL�玉夫座天文学家拉卡伊为填补南天星空中的空白而划定的小星座，曾被命名为“雕刻家的工作室”。
+~
+INTRO_TEXT_ERIl波江座是南北跨度最大的星座，如一条汹涌河流在几个星座之间蜿蜒曲折的流过。
+o
+INTRO_TEXT_SCT]盾牌座是一个被几大星座包围其中的小小星座，银河穿越过这个星座，
+�
+INTRO_TEXT_FOR�天炉座是天文学家拉卡伊为填补星空空隙划定的一个小星座，然而座内却有一个著名的天炉座星系团。
+�
+INTRO_TEXT_ANT�唧筒座是天文学家拉卡伊为纪念英国化学屋里学家罗比特 · 波义尔发明唧筒（水泵）而划分并命名的。
+�
+INTRO_TEXT_CAE�雕具座的命名过程较为坎坷，先是被称为”凿子“，又险些被更名为普拉希特勒斯…当然最终都失败了。
+r
+INTRO_TEXT_CRT`巨爵座是黄道带最暗淡的星座，传说巨爵是太阳神阿波罗饮酒用的酒杯。
+�
+INTRO_TEXT_LUP�豺狼座是南天星座之一，有人说它代表的是希腊神话中的国王，天文学家却反其道而行认定其为狼。
+�
+INTRO_TEXT_CMA�大犬座传说是猎人的一只猎狗，其中有一颗十分有名的星，“天狼星”，它可是夜空中最亮的星喔。
+�
+INTRO_TEXT_COL�天鸽座最初叫“诺亚鸽座”，传说就是那只把橄榄枝衔回诺亚方舟，报告洪水已经开始退去的鸽子喔。
+�
+INTRO_TEXT_CRV�乌鸦座形如不规则四边形，属实难以看出乌鸦的形象，然而关于”乌鸦“的神话故事却着实不少。
+u
+INTRO_TEXT_PSAc南鱼座是古希腊星座中最南端的星座，传说中与双鱼座有着奇妙的关系喔。
+x
+INTRO_TEXT_LEPf天兔座是一个蜗居在猎户座脚下的小星座，好似一只被猎户追逐的弱小兔子。
+�
+INTRO_TEXT_SEXx六分仪座是天球赤道上的一个黯淡星座，为纪念用于测量天体高度的”六分仪“而得此名。
+�
+INTRO_TEXT_IND�印第安座这个名字源于16世纪末，欧洲人第一次见到新大陆的印第安人，因此代表了美洲的印第安人。
+x
+INTRO_TEXT_TRAf南三角座虽然小，却十分的耀眼，座内三颗星构成等腰三角形，正指南天极。
+�
+INTRO_TEXT_TEL~望远镜座是十二个以科学器具命名的星座之一，是一个不起眼的黯淡星座，却意为放眼宏观世界
+�
+INTRO_TEXT_CRU~南十字座是最小的星座，北回归线以南的地方皆可观测，这个星座甚至出现在了多国的国旗上。
+�
+INTRO_TEXT_CEN�半人马座是一个巨大的明亮星座，郑和七下南洋时，曾借座内最亮的2颗星来导航，并称为“南门双星”。
+�
+INTRO_TEXT_MIC�显微镜座是十二个以科学器具命名的星座之一，意为洞察微观世界，星座内的恒星难以肉眼观测。

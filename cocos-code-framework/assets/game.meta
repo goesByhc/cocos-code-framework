@@ -1,0 +1,12 @@
+{
+  "ver": "1.1.2",
+  "uuid": "bae3937d-dd49-4964-9cef-5cbc1f8ede8b",
+  "isBundle": true,
+  "bundleName": "game",
+  "priority": 1,
+  "compressionType": {},
+  "optimizeHotUpdate": {},
+  "inlineSpriteFrames": {},
+  "isRemoteBundle": {},
+  "subMetas": {}
+}
