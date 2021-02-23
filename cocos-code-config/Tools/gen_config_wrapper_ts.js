@@ -12,6 +12,9 @@ for(let key in GameConfigAll)
 
     if(obj instanceof Function && (obj.Enums != null || obj.Enum != null)) continue; //如果是枚举类型的话
 
+    if(!key.startsWith("Config")) continue; //说明是某个表的子类型
+
+
     if(GameConfigAll[key] instanceof Function && GameConfigAll[key].prototype.list instanceof Array )
     {
         itemName = key.replace("List","");
