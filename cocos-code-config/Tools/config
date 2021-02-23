@@ -1,0 +1,5 @@
+__config_path=$(cd "$(dirname "$0")";pwd)
+project_path="$__config_path/../../cocos-code-framework/assets"
+target_archive_path="$project_path/framework/archive"
+target_config_path="$project_path/framework/config"
+target_network_path="$project_path/framework/network"

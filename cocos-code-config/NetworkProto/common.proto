@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_package = "com.inke.msg";
+option go_package = ".;game";
+
+message MS2C
+{
+	int64 		commandId		=	1;
+	int64		dm_error		=	2;
+	string		error_msg		=	3;
+	bytes		data			=	4;
+}
+
+message MC2S
+{
+	int64		commandId		=	1;
+	bytes		data			=	2;
+}
+
+message MessageType {
+	enum Enums {
+		Unknown         = 0;
+		C2S_Heart = 1;
+		S2C_Heart = -1;
+	}
+}
